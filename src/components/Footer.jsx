@@ -35,8 +35,8 @@ export default function Footer() {
           {/* Brand & Designation */}
           <div className="md:col-span-5 space-y-2">
             <div className="flex items-center gap-3">
-              <div className="flex items-center justify-center w-9 h-9 rounded-xl bg-gradient-to-br from-[#6366F1] to-indigo-700 text-white font-bold text-sm shadow-sm">
-                &lt;HH /&gt;
+              <div className="flex items-center justify-center w-9 h-9 rounded-xl bg-linear-to-br from-[#6366F1] to-indigo-700 text-white font-bold text-sm shadow-sm">
+                &lt;AR&gt;
               </div>
               <span className="font-bold text-lg tracking-tight text-[#0F172A] dark:text-[#F8FAFC]">
                 {personalInfo.name}

@@ -157,12 +157,14 @@ export default function Hero({ onOpenResume, onShowToast }) {
                         priority
                       />
                     </div>
-                    <div className="mt-3">
-                      <p className="text-sm font-bold text-[#0F172A] dark:text-[#F8FAFC]">
-                        {personalInfo.name}
-                      </p>
-                      <p className="text-xs text-slate-500 dark:text-slate-400">
-                        JnU &middot; MERN &middot; Next.js
+                    <div className="mt-3 flex flex-col items-center">
+                      <div className="flex items-center gap-1.5">
+                        <p className="text-sm font-bold text-[#0F172A] dark:text-[#F8FAFC]">
+                          {personalInfo.name}
+                        </p>
+                      </div>
+                      <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+                        Full-Stack Developer
                       </p>
                     </div>
                   </div>
@@ -175,7 +177,7 @@ export default function Hero({ onOpenResume, onShowToast }) {
                   <div className="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-900/80 border border-slate-200/80 dark:border-slate-800 flex items-center justify-between text-slate-600 dark:text-slate-300">
                     <span className="text-slate-400">Focus Stack:</span>
                     <span className="font-semibold text-emerald-600 dark:text-emerald-400">
-                      Next.js & MERN
+                      Full-Stack
                     </span>
                   </div>
 

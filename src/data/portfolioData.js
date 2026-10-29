@@ -2,7 +2,7 @@ export const personalInfo = {
   name: "Abdullah Redoan",
   shortName: "Redoan",
   initials: "AR",
-  designation: "Full-Stack Web Developer & Undergraduate Student",
+  designation: "Full-Stack Developer",
   welcomeTagline: "Bridging Analytical Critical Thinking with Modern Full-Stack Engineering",
   heroBio:
     "Passionate about building scalable, high-performance web applications and crafting clean, accessible user experiences. Combining humanities-rooted analytical reasoning with modern client-side and full-stack software development.",
@@ -114,7 +114,7 @@ export const educationAndExperience = {
     {
       degree: "Bachelor of Arts (BA) in English Literature",
       institution: "Jagannath University, Dhaka",
-      period: "2022 – Present",
+      period: "2024 – Present",
       status: "Currently Enrolled (Undergraduate)",
       badge: "Academic Degree",
       highlights: [
@@ -127,14 +127,14 @@ export const educationAndExperience = {
   experience: [
     {
       role: "Web Design & Programming Instructor",
-      company: "Creative Zone IT & Local Coaching Centers",
+      company: "Creative Zone IT",
       location: "Dhaka, Bangladesh",
-      period: "2023 – Present",
+      period: "2026 – Present",
       status: "Active Mentorship",
       badge: "Instructor / Mentorship",
       highlights: [
         "Conducted in-depth lectures and practical computer lab sessions teaching HTML5, CSS3, Tailwind CSS, JavaScript (ES6+), and algorithmic programming logic.",
-        "Mentored 150+ students through step-by-step coding bootcamps, guiding them from foundational syntax to building fully functional portfolio and web apps.",
+        "Mentored 15+ students through step-by-step coding bootcamps, guiding them from foundational syntax to building fully functional portfolio and web apps.",
         "Curated interactive assignments, conducted code reviews, and fostered real-world debugging methodologies.",
         "Helped novice learners transition into junior front-end development internships and freelance opportunities.",
       ],

@@ -13,16 +13,21 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Abdullah Redoan | Full-Stack Web Developer & Undergraduate Student",
+  title: "Abdullah Redoan | Full-Stack Developer",
   description:
-    "Portfolio of Abdullah Redoan - Full-Stack Web Developer (MERN Stack, Next.js, Tailwind CSS) & English Literature Undergraduate Student at Jagannath University, Dhaka. Web Design & Programming Instructor.",
+    "Portfolio of Abdullah Redoan - Full-Stack Developer (MERN Stack, Next.js, Tailwind CSS) & Web Design & Programming Instructor.",
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico", sizes: "32x32" },
+    ],
+  },
   keywords: [
     "Abdullah Redoan",
     "Full-Stack Developer",
     "MERN Stack",
     "Next.js Developer",
     "Tailwind CSS",
-    "Jagannath University",
     "Creative Zone IT Instructor",
     "Web Development",
     "JavaScript",

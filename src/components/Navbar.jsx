@@ -1,20 +1,20 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useSyncExternalStore } from "react";
 import { useTheme } from "next-themes";
 import { Sun, Moon, Menu, X, ArrowUpRight, Sparkles } from "lucide-react";
 import { navLinks, personalInfo } from "@/data/portfolioData";
 
+const emptySubscribe = () => () => {};
+
 export default function Navbar() {
   const { theme, setTheme, resolvedTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
+  const mounted = useSyncExternalStore(emptySubscribe, () => true, () => false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("hero");
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
-
     const handleScroll = () => {
       // Background blur intensity on scroll
       setScrolled(window.scrollY > 20);
@@ -78,8 +78,8 @@ export default function Navbar() {
             onClick={(e) => handleNavClick(e, "#hero")}
             className="group flex items-center gap-3 focus:outline-none"
           >
-            <div className="relative flex items-center justify-center w-11 h-11 rounded-xl bg-gradient-to-br from-[#6366F1] to-indigo-700 text-white font-bold text-lg shadow-md shadow-indigo-500/20 group-hover:scale-105 transition-transform duration-200">
-              <span className="font-mono tracking-tighter">&lt;HH /&gt;</span>
+            <div className="relative flex items-center justify-center w-11 h-11 rounded-xl bg-linear-to-br from-[#6366F1] to-indigo-700 text-white font-bold text-lg shadow-md shadow-indigo-500/20 group-hover:scale-105 transition-transform duration-200">
+              <span className="font-mono tracking-tighter">&lt;AR&gt;</span>
               <span className="absolute -inset-0.5 rounded-xl bg-[#6366F1] opacity-0 group-hover:opacity-40 blur-sm transition-opacity duration-300" />
             </div>
             <div className="flex flex-col">
